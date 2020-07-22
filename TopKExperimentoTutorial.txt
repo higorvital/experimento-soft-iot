@@ -1,0 +1,12 @@
+[Devices] 1 - Roda o script para criar dispositivos (script.py na pasta IoTSimulated.../virtual...)
+[Devices] 2 - Configura o IP do broker a qual o dispositivos vão se conectar (config.propertie na pasta IoTSimula...)
+[Gateway] 3 - Roda o script que adiciona os dispositivos ao Mapping Devices (script.py na pasta apache.../etc)
+[Gateway] 4 - Roda o broker do Gateway usando o Mosquitto MQTT (Windows+F para rodar em outra aba)
+[Devices] 5 - Roda o código dos dispoditivos simulados (IoTSimulated...-with_depencies.jar passando o config.properies como parâmetro)
+[Gateway] 6 - Configurar o IP do broker do gateway (br...bottom.broker.config em apache.../etc)
+[Gateway] 7 - Roda o ServiceMix e starta Bottom Broker no WebConsole
+[Cloud] 8 - Roda o broker da nuvem
+[Fog] 9 - Configura o IP do broker de baixo e do de cima (br...fog.gateway.config  em apache.../etc)
+[Fog] 10 - Rodar o ServiceMix e startar o Fog Gateway no WebConsole
+[Cliente] 11 - Se conecta com o broker da Nuvem
+[Cliente] 12 - Publicar a requisição no broker da nuvem (mosquitto_pub -t "TOP_K_HEALTH/{id}/{k}" -m "função")
